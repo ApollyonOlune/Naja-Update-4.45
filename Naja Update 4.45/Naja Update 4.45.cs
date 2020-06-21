@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Drawing;
+using System.IO;
 using System.Windows.Forms;
 
 
@@ -10,6 +11,7 @@ namespace Naja_Update_4._45
         public Form1()
         {
             InitializeComponent();
+
         }
 
         readonly Depuracao dep = new Depuracao(); //iniciando a classe depuração
@@ -552,7 +554,7 @@ namespace Naja_Update_4._45
                 toolStripStatusLabel1.Text = ("Movendo " + programa);
                 try
                 {
-                    System.IO.File.Move(concat_caminho_entrada, concat_caminho_saida);
+                    System.IO.File.Copy(concat_caminho_entrada, concat_caminho_saida, true);
                     toolStripStatusLabel1.Text = (programa + " Movido");
                     dep.listBox1.Items.Add("Programa movido com sucesso"); //armazenando informação para visualização do usuário
                 }
@@ -579,7 +581,7 @@ namespace Naja_Update_4._45
                 toolStripStatusLabel1.Text = ("Movendo " + programa);
                 try
                 {
-                    System.IO.File.Move(concat_caminho_entrada, concat_caminho_saida);
+                    System.IO.File.Copy(concat_caminho_entrada, concat_caminho_saida, true);
                     toolStripStatusLabel1.Text = (programa + " Movido");
                     dep.listBox1.Items.Add("Programa movido com sucesso"); //armazenando informação para visualização do usuário
                 }
@@ -606,7 +608,7 @@ namespace Naja_Update_4._45
                 toolStripStatusLabel1.Text = ("Movendo " + programa);
                 try
                 {
-                    System.IO.File.Move(concat_caminho_entrada, concat_caminho_saida);
+                    System.IO.File.Copy(concat_caminho_entrada, concat_caminho_saida, true);
                     toolStripStatusLabel1.Text = (programa + " Movido");
                     dep.listBox1.Items.Add("Programa movido com sucesso"); //armazenando informação para visualização do usuário
                 }
@@ -633,7 +635,7 @@ namespace Naja_Update_4._45
                 toolStripStatusLabel1.Text = ("Movendo " + programa);
                 try
                 {
-                    System.IO.File.Move(concat_caminho_entrada, concat_caminho_saida);
+                    System.IO.File.Copy(concat_caminho_entrada, concat_caminho_saida, true);
                     toolStripStatusLabel1.Text = (programa + " Movido");
                     dep.listBox1.Items.Add("Programa movido com sucesso"); //armazenando informação para visualização do usuário
                 }
@@ -660,7 +662,7 @@ namespace Naja_Update_4._45
                 toolStripStatusLabel1.Text = ("Movendo " + programa);
                 try
                 {
-                    System.IO.File.Move(concat_caminho_entrada, concat_caminho_saida);
+                    System.IO.File.Copy(concat_caminho_entrada, concat_caminho_saida, true);
                     toolStripStatusLabel1.Text = (programa + " Movido");
                     dep.listBox1.Items.Add("Programa movido com sucesso"); //armazenando informação para visualização do usuário
                 }
@@ -687,7 +689,7 @@ namespace Naja_Update_4._45
                 toolStripStatusLabel1.Text = ("Movendo " + programa);
                 try
                 {
-                    System.IO.File.Move(concat_caminho_entrada, concat_caminho_saida);
+                    System.IO.File.Copy(concat_caminho_entrada, concat_caminho_saida, true);
                     toolStripStatusLabel1.Text = (programa + " Movido");
                     dep.listBox1.Items.Add("Programa movido com sucesso"); //armazenando informação para visualização do usuário
                 }
@@ -714,7 +716,7 @@ namespace Naja_Update_4._45
                 toolStripStatusLabel1.Text = ("Movendo " + programa);
                 try
                 {
-                    System.IO.File.Move(concat_caminho_entrada, concat_caminho_saida);
+                    System.IO.File.Copy(concat_caminho_entrada, concat_caminho_saida, true);
                     toolStripStatusLabel1.Text = (programa + " Movido");
                     dep.listBox1.Items.Add("Programa movido com sucesso"); //armazenando informação para visualização do usuário
                 }
@@ -741,7 +743,7 @@ namespace Naja_Update_4._45
                 toolStripStatusLabel1.Text = ("Movendo " + programa);
                 try
                 {
-                    System.IO.File.Move(concat_caminho_entrada, concat_caminho_saida);
+                    System.IO.File.Copy(concat_caminho_entrada, concat_caminho_saida, true);
                     toolStripStatusLabel1.Text = (programa + " Movido");
                     dep.listBox1.Items.Add("Programa movido com sucesso"); //armazenando informação para visualização do usuário
                 }
@@ -768,7 +770,7 @@ namespace Naja_Update_4._45
                 toolStripStatusLabel1.Text = ("Movendo " + programa);
                 try
                 {
-                    System.IO.File.Move(concat_caminho_entrada, concat_caminho_saida);
+                    System.IO.File.Copy(concat_caminho_entrada, concat_caminho_saida, true);
                     toolStripStatusLabel1.Text = (programa + " Movido");
                     dep.listBox1.Items.Add("Programa movido com sucesso"); //armazenando informação para visualização do usuário
                 }
@@ -795,7 +797,7 @@ namespace Naja_Update_4._45
                 toolStripStatusLabel1.Text = ("Movendo " + programa);
                 try
                 {
-                    System.IO.File.Move(concat_caminho_entrada, concat_caminho_saida);
+                    System.IO.File.Copy(concat_caminho_entrada, concat_caminho_saida, true);
                     toolStripStatusLabel1.Text = (programa + " Movido");
                     dep.listBox1.Items.Add("Programa movido com sucesso"); //armazenando informação para visualização do usuário
                 }
@@ -822,7 +824,7 @@ namespace Naja_Update_4._45
                 toolStripStatusLabel1.Text = ("Movendo " + programa);
                 try
                 {
-                    System.IO.File.Move(concat_caminho_entrada, concat_caminho_saida);
+                    System.IO.File.Copy(concat_caminho_entrada, concat_caminho_saida, true);
                     toolStripStatusLabel1.Text = (programa + " Movido");
                     dep.listBox1.Items.Add("Programa movido com sucesso"); //armazenando informação para visualização do usuário
                 }
@@ -849,7 +851,7 @@ namespace Naja_Update_4._45
                 toolStripStatusLabel1.Text = ("Movendo " + programa);
                 try
                 {
-                    System.IO.File.Move(concat_caminho_entrada, concat_caminho_saida);
+                    System.IO.File.Copy(concat_caminho_entrada, concat_caminho_saida, true);
                     toolStripStatusLabel1.Text = (programa + " Movido");
                     dep.listBox1.Items.Add("Programa movido com sucesso"); //armazenando informação para visualização do usuário
                 }
@@ -876,7 +878,7 @@ namespace Naja_Update_4._45
                 toolStripStatusLabel1.Text = ("Movendo " + programa);
                 try
                 {
-                    System.IO.File.Move(concat_caminho_entrada, concat_caminho_saida);
+                    System.IO.File.Copy(concat_caminho_entrada, concat_caminho_saida, true);
                     toolStripStatusLabel1.Text = (programa + " Movido");
                     dep.listBox1.Items.Add("Programa movido com sucesso"); //armazenando informação para visualização do usuário
                 }
@@ -903,7 +905,7 @@ namespace Naja_Update_4._45
                 toolStripStatusLabel1.Text = ("Movendo " + programa);
                 try
                 {
-                    System.IO.File.Move(concat_caminho_entrada, concat_caminho_saida);
+                    System.IO.File.Copy(concat_caminho_entrada, concat_caminho_saida, true);
                     toolStripStatusLabel1.Text = (programa + " Movido");
                     dep.listBox1.Items.Add("Programa movido com sucesso"); //armazenando informação para visualização do usuário
                 }
@@ -930,7 +932,7 @@ namespace Naja_Update_4._45
                 toolStripStatusLabel1.Text = ("Movendo " + programa);
                 try
                 {
-                    System.IO.File.Move(concat_caminho_entrada, concat_caminho_saida);
+                    System.IO.File.Copy(concat_caminho_entrada, concat_caminho_saida, true);
                     toolStripStatusLabel1.Text = (programa + " Movido");
                     dep.listBox1.Items.Add("Programa movido com sucesso"); //armazenando informação para visualização do usuário
                 }
@@ -957,7 +959,7 @@ namespace Naja_Update_4._45
                 toolStripStatusLabel1.Text = ("Movendo " + programa);
                 try
                 {
-                    System.IO.File.Move(concat_caminho_entrada, concat_caminho_saida);
+                    System.IO.File.Copy(concat_caminho_entrada, concat_caminho_saida, true);
                     toolStripStatusLabel1.Text = (programa + " Movido");
                     dep.listBox1.Items.Add("Programa movido com sucesso"); //armazenando informação para visualização do usuário
                 }
@@ -984,7 +986,7 @@ namespace Naja_Update_4._45
                 toolStripStatusLabel1.Text = ("Movendo " + programa);
                 try
                 {
-                    System.IO.File.Move(concat_caminho_entrada, concat_caminho_saida);
+                    System.IO.File.Copy(concat_caminho_entrada, concat_caminho_saida, true);
                     toolStripStatusLabel1.Text = (programa + " Movido");
                     dep.listBox1.Items.Add("Programa movido com sucesso"); //armazenando informação para visualização do usuário
                 }
@@ -1011,7 +1013,7 @@ namespace Naja_Update_4._45
                 toolStripStatusLabel1.Text = ("Movendo " + programa);
                 try
                 {
-                    System.IO.File.Move(concat_caminho_entrada, concat_caminho_saida);
+                    System.IO.File.Copy(concat_caminho_entrada, concat_caminho_saida, true);
                     toolStripStatusLabel1.Text = (programa + " Movido");
                     dep.listBox1.Items.Add("Programa movido com sucesso"); //armazenando informação para visualização do usuário
                 }
@@ -1038,7 +1040,7 @@ namespace Naja_Update_4._45
                 toolStripStatusLabel1.Text = ("Movendo " + programa);
                 try
                 {
-                    System.IO.File.Move(concat_caminho_entrada, concat_caminho_saida);
+                    System.IO.File.Copy(concat_caminho_entrada, concat_caminho_saida, true);
                     toolStripStatusLabel1.Text = (programa + " Movido");
                     dep.listBox1.Items.Add("Programa movido com sucesso"); //armazenando informação para visualização do usuário
                 }
@@ -1065,7 +1067,7 @@ namespace Naja_Update_4._45
                 toolStripStatusLabel1.Text = ("Movendo " + programa);
                 try
                 {
-                    System.IO.File.Move(concat_caminho_entrada, concat_caminho_saida);
+                    System.IO.File.Copy(concat_caminho_entrada, concat_caminho_saida, true);
                     toolStripStatusLabel1.Text = (programa + " Movido");
                     dep.listBox1.Items.Add("Programa movido com sucesso"); //armazenando informação para visualização do usuário
                 }
@@ -1092,7 +1094,7 @@ namespace Naja_Update_4._45
                 toolStripStatusLabel1.Text = ("Movendo " + programa);
                 try
                 {
-                    System.IO.File.Move(concat_caminho_entrada, concat_caminho_saida);
+                    System.IO.File.Copy(concat_caminho_entrada, concat_caminho_saida, true);
                     toolStripStatusLabel1.Text = (programa + " Movido");
                     dep.listBox1.Items.Add("Programa movido com sucesso"); //armazenando informação para visualização do usuário
                 }
@@ -1119,7 +1121,7 @@ namespace Naja_Update_4._45
                 toolStripStatusLabel1.Text = ("Movendo " + programa);
                 try
                 {
-                    System.IO.File.Move(concat_caminho_entrada, concat_caminho_saida);
+                    System.IO.File.Copy(concat_caminho_entrada, concat_caminho_saida, true);
                     toolStripStatusLabel1.Text = (programa + " Movido");
                     dep.listBox1.Items.Add("Programa movido com sucesso"); //armazenando informação para visualização do usuário
                 }
@@ -1147,7 +1149,7 @@ namespace Naja_Update_4._45
                 toolStripStatusLabel1.Text = ("Movendo " + programa);
                 try
                 {
-                    System.IO.File.Move(concat_caminho_entrada, concat_caminho_saida);
+                    System.IO.File.Copy(concat_caminho_entrada, concat_caminho_saida, true);
                     toolStripStatusLabel1.Text = (programa + " Movido");
                     dep.listBox1.Items.Add("Programa movido com sucesso"); //armazenando informação para visualização do usuário
                 }
@@ -1174,7 +1176,7 @@ namespace Naja_Update_4._45
                 toolStripStatusLabel1.Text = ("Movendo " + programa);
                 try
                 {
-                    System.IO.File.Move(concat_caminho_entrada, concat_caminho_saida);
+                    System.IO.File.Copy(concat_caminho_entrada, concat_caminho_saida, true);
                     toolStripStatusLabel1.Text = (programa + " Movido");
                     dep.listBox1.Items.Add("Programa movido com sucesso"); //armazenando informação para visualização do usuário
                 }
@@ -1186,12 +1188,222 @@ namespace Naja_Update_4._45
                 }
             }
             toolStripProgressBar1.Value += 3;
+
+            ////Movendo as Tabelas.
+            //Início da TabelasCampo.
+            if (tabelasCampo.Checked == true)
+            {
+                programa = ("Tabelas Campo"); //Nome do Programa a ser Colocado.
+                dep.listBox1.Items.Add("Selecionado " + programa); //armazenando caminho para visualização do usuário
+                nome_do_arquivo = ("\\TabelasCampo.naja"); //Nome interno do programa
+                caminho_interno = ("\\Tabelas" + nome_do_arquivo); //caminho interno do programa
+                concat_caminho_entrada = string.Concat(caminho_deste_programa, caminho_interno); //caminho de qual arquivo copiar
+                dep.listBox1.Items.Add("Arquivo vai ser movido de " + concat_caminho_entrada); //armazenando caminho para visualização do usuário
+                concat_caminho_saida = (caminho_da_instacao_naja_do_pc + "\\Atualizacao"); //caminho de onde colar
+                dep.listBox1.Items.Add("Arquivo vai ser colado em " + concat_caminho_saida); //armazenando caminho para visualização do usuário
+                toolStripStatusLabel1.Text = ("Movendo " + programa);
+                try
+                {
+                    System.IO.File.Copy(concat_caminho_entrada, concat_caminho_saida, true);
+                    toolStripStatusLabel1.Text = (programa + " Movido");
+                    dep.listBox1.Items.Add("Programa movido com sucesso"); //armazenando informação para visualização do usuário
+                }
+                catch (System.IO.IOException exc)
+                {
+                    MessageBox.Show(exc.Message);
+                    toolStripStatusLabel1.Text = ("Erro ao Mover " + programa);
+                    dep.listBox1.Items.Add("Erro ao move o programa, detalhe do erro: " + exc); //armazenando informação para visualização do usuário
+                }
+            }
+            toolStripProgressBar1.Value += 3;
+
+            //Início da Tabelas.
+            if (tabelas.Checked == true)
+            {
+                programa = ("Tabelas"); //Nome do Programa a ser Colocado.
+                dep.listBox1.Items.Add("Selecionado " + programa); //armazenando caminho para visualização do usuário
+                nome_do_arquivo = ("\\Tabelas.naja"); //Nome interno do programa
+                caminho_interno = ("\\Tabelas" + nome_do_arquivo); //caminho interno do programa
+                concat_caminho_entrada = string.Concat(caminho_deste_programa, caminho_interno); //caminho de qual arquivo copiar
+                dep.listBox1.Items.Add("Arquivo vai ser movido de " + concat_caminho_entrada); //armazenando caminho para visualização do usuário
+                concat_caminho_saida = (caminho_da_instacao_naja_do_pc + "\\Atualizacao"); //caminho de onde colar
+                dep.listBox1.Items.Add("Arquivo vai ser colado em " + concat_caminho_saida); //armazenando caminho para visualização do usuário
+                toolStripStatusLabel1.Text = ("Movendo " + programa);
+                try
+                {
+                    System.IO.File.Copy(concat_caminho_entrada, concat_caminho_saida, true);
+                    toolStripStatusLabel1.Text = (programa + " Movido");
+                    dep.listBox1.Items.Add("Programa movido com sucesso"); //armazenando informação para visualização do usuário
+                }
+                catch (System.IO.IOException exc)
+                {
+                    MessageBox.Show(exc.Message);
+                    toolStripStatusLabel1.Text = ("Erro ao Mover " + programa);
+                    dep.listBox1.Items.Add("Erro ao move o programa, detalhe do erro: " + exc); //armazenando informação para visualização do usuário
+                }
+            }
+            toolStripProgressBar1.Value += 3;
+
+            //Início da Tabelas.
+            if (menu.Checked == true)
+            {
+                programa = ("Menu"); //Nome do Programa a ser Colocado.
+                dep.listBox1.Items.Add("Selecionado " + programa); //armazenando caminho para visualização do usuário
+                nome_do_arquivo = ("\\Menu.naja"); //Nome interno do programa
+                caminho_interno = ("\\Tabelas" + nome_do_arquivo); //caminho interno do programa
+                concat_caminho_entrada = string.Concat(caminho_deste_programa, caminho_interno); //caminho de qual arquivo copiar
+                dep.listBox1.Items.Add("Arquivo vai ser movido de " + concat_caminho_entrada); //armazenando caminho para visualização do usuário
+                concat_caminho_saida = (caminho_da_instacao_naja_do_pc + "\\Atualizacao"); //caminho de onde colar
+                dep.listBox1.Items.Add("Arquivo vai ser colado em " + concat_caminho_saida); //armazenando caminho para visualização do usuário
+                toolStripStatusLabel1.Text = ("Movendo " + programa);
+                try
+                {
+                    System.IO.File.Copy(concat_caminho_entrada, concat_caminho_saida, true);
+                    toolStripStatusLabel1.Text = (programa + " Movido");
+                    dep.listBox1.Items.Add("Programa movido com sucesso"); //armazenando informação para visualização do usuário
+                }
+                catch (System.IO.IOException exc)
+                {
+                    MessageBox.Show(exc.Message);
+                    toolStripStatusLabel1.Text = ("Erro ao Mover " + programa);
+                    dep.listBox1.Items.Add("Erro ao move o programa, detalhe do erro: " + exc); //armazenando informação para visualização do usuário
+                }
+            }
+            toolStripProgressBar1.Value += 3;
+
+            //Início da HistVersao.
+            if (histversao.Checked == true)
+            {
+                programa = ("HistVersão"); //Nome do Programa a ser Colocado.
+                dep.listBox1.Items.Add("Selecionado " + programa); //armazenando caminho para visualização do usuário
+                nome_do_arquivo = ("\\HistVersao.naja"); //Nome interno do programa
+                caminho_interno = ("\\Tabelas" + nome_do_arquivo); //caminho interno do programa
+                concat_caminho_entrada = string.Concat(caminho_deste_programa, caminho_interno); //caminho de qual arquivo copiar
+                dep.listBox1.Items.Add("Arquivo vai ser movido de " + concat_caminho_entrada); //armazenando caminho para visualização do usuário
+                concat_caminho_saida = (caminho_da_instacao_naja_do_pc + "\\Atualizacao"); //caminho de onde colar
+                dep.listBox1.Items.Add("Arquivo vai ser colado em " + concat_caminho_saida); //armazenando caminho para visualização do usuário
+                toolStripStatusLabel1.Text = ("Movendo " + programa);
+                try
+                {
+                    System.IO.File.Copy(concat_caminho_entrada, concat_caminho_saida, true);
+                    toolStripStatusLabel1.Text = (programa + " Movido");
+                    dep.listBox1.Items.Add("Programa movido com sucesso"); //armazenando informação para visualização do usuário
+                }
+                catch (System.IO.IOException exc)
+                {
+                    MessageBox.Show(exc.Message);
+                    toolStripStatusLabel1.Text = ("Erro ao Mover " + programa);
+                    dep.listBox1.Items.Add("Erro ao move o programa, detalhe do erro: " + exc); //armazenando informação para visualização do usuário
+                }
+            }
+            toolStripProgressBar1.Value += 3;
+
+            //Início da Help.
+            if (help.Checked == true)
+            {
+                programa = ("Help"); //Nome do Programa a ser Colocado.
+                dep.listBox1.Items.Add("Selecionado " + programa); //armazenando caminho para visualização do usuário
+                nome_do_arquivo = ("\\Help.naja"); //Nome interno do programa
+                caminho_interno = ("\\Tabelas" + nome_do_arquivo); //caminho interno do programa
+                concat_caminho_entrada = string.Concat(caminho_deste_programa, caminho_interno); //caminho de qual arquivo copiar
+                dep.listBox1.Items.Add("Arquivo vai ser movido de " + concat_caminho_entrada); //armazenando caminho para visualização do usuário
+                concat_caminho_saida = (caminho_da_instacao_naja_do_pc + "\\Atualizacao"); //caminho de onde colar
+                dep.listBox1.Items.Add("Arquivo vai ser colado em " + concat_caminho_saida); //armazenando caminho para visualização do usuário
+                toolStripStatusLabel1.Text = ("Movendo " + programa);
+                try
+                {
+                    System.IO.File.Copy(concat_caminho_entrada, concat_caminho_saida, true);
+                    toolStripStatusLabel1.Text = (programa + " Movido");
+                    dep.listBox1.Items.Add("Programa movido com sucesso"); //armazenando informação para visualização do usuário
+                }
+                catch (System.IO.IOException exc)
+                {
+                    MessageBox.Show(exc.Message);
+                    toolStripStatusLabel1.Text = ("Erro ao Mover " + programa);
+                    dep.listBox1.Items.Add("Erro ao move o programa, detalhe do erro: " + exc); //armazenando informação para visualização do usuário
+                }
+            }
+            toolStripProgressBar1.Value += 3;
+
+            //Início da Colunas.
+            if (colunas.Checked == true)
+            {
+                programa = ("Colunas"); //Nome do Programa a ser Colocado.
+                dep.listBox1.Items.Add("Selecionado " + programa); //armazenando caminho para visualização do usuário
+                nome_do_arquivo = ("\\Colunas.naja"); //Nome interno do programa
+                caminho_interno = ("\\Tabelas" + nome_do_arquivo); //caminho interno do programa
+                concat_caminho_entrada = string.Concat(caminho_deste_programa, caminho_interno); //caminho de qual arquivo copiar
+                dep.listBox1.Items.Add("Arquivo vai ser movido de " + concat_caminho_entrada); //armazenando caminho para visualização do usuário
+                concat_caminho_saida = (caminho_da_instacao_naja_do_pc + "\\Atualizacao"); //caminho de onde colar
+                dep.listBox1.Items.Add("Arquivo vai ser colado em " + concat_caminho_saida); //armazenando caminho para visualização do usuário
+                toolStripStatusLabel1.Text = ("Movendo " + programa);
+                try
+                {
+                    System.IO.File.Copy(concat_caminho_entrada, concat_caminho_saida, true);
+                    toolStripStatusLabel1.Text = (programa + " Movido");
+                    dep.listBox1.Items.Add("Programa movido com sucesso"); //armazenando informação para visualização do usuário
+                }
+                catch (System.IO.IOException exc)
+                {
+                    MessageBox.Show(exc.Message);
+                    toolStripStatusLabel1.Text = ("Erro ao Mover " + programa);
+                    dep.listBox1.Items.Add("Erro ao move o programa, detalhe do erro: " + exc); //armazenando informação para visualização do usuário
+                }
+            }
+            toolStripProgressBar1.Value += 3;
+
+            ////Movendo Scripts.
+            if (script_todos.Checked == true)
+            {
+                programa = ("Scripts"); //Nome do Programa a ser Colocado.
+                dep.listBox1.Items.Add("Selecionado " + programa); //armazenando caminho para visualização do usuário
+                caminho_interno = ("\\Scripts"); //caminho interno do programa
+                concat_caminho_entrada = string.Concat(caminho_deste_programa, caminho_interno); //caminho de qual arquivo copiar
+                dep.listBox1.Items.Add("Arquivo vai ser movido de " + concat_caminho_entrada); //armazenando caminho para visualização do usuário
+                concat_caminho_saida = string.Concat(caminho_da_instacao_naja_do_pc, caminho_interno); //caminho de onde colar
+                dep.listBox1.Items.Add("Arquivo vai ser colado em " + concat_caminho_saida); //armazenando caminho para visualização do usuário
+                toolStripStatusLabel1.Text = ("Movendo " + programa);
+                try
+                {
+                    string[] arquivos = System.IO.Directory.GetFiles(concat_caminho_entrada);
+                    foreach (string s in arquivos)
+                    {
+                        nome_do_arquivo = System.IO.Path.GetFileName(s);
+                        dep.listBox1.Items.Add("O script " + nome_do_arquivo + " foi selecionado.");
+                        string arquivo_de_destino = System.IO.Path.Combine(concat_caminho_saida, nome_do_arquivo);
+                        System.IO.File.Copy(s, arquivo_de_destino, true);
+                        dep.listBox1.Items.Add("O script " + nome_do_arquivo + " foi movido.");
+                        toolStripStatusLabel1.Text = ("Movendo " + nome_do_arquivo);
+
+                    }
+                    toolStripStatusLabel1.Text = (programa + " Movido");
+                    dep.listBox1.Items.Add("Programa movido com sucesso"); //armazenando informação para visualização do usuário
+                }
+                catch (System.IO.IOException exc)
+                {
+                    MessageBox.Show(exc.Message);
+                    toolStripStatusLabel1.Text = ("Erro ao Mover " + programa);
+                    dep.listBox1.Items.Add("Erro ao move o programa, detalhe do erro: " + exc); //armazenando informação para visualização do usuário
+                }
+                toolStripProgressBar1.Value += 3;
+            }
         }
+
         private void Button3_Click(object sender, EventArgs e)
         {
             dep.listBox1.Items.Add("O " + botao_debug.Name + "foi pressionado"); //registando o evento para visualização do usuário
             dep.Show(); //abrindo a janela de depuração
         }
 
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+
+            //Atendimento Clinico
+            string caminho = txtCaminho + "\\Clientes\\AtendClinico.xml";
+            if (System.IO.File.Exists(@caminho)==true)
+            {
+                toolStripProgressBar1.Value = 50;
+            }
+        }
     }
 }

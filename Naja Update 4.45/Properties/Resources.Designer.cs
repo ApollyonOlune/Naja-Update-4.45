@@ -63,16 +63,6 @@ namespace Naja_Update_4._45.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap bug {
-            get {
-                object obj = ResourceManager.GetObject("bug", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap bug1 {
             get {
                 object obj = ResourceManager.GetObject("bug1", resourceCulture);
@@ -93,16 +83,6 @@ namespace Naja_Update_4._45.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_file_explorer_96 {
-            get {
-                object obj = ResourceManager.GetObject("icons8-file-explorer-96", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap icons8_refresh_shield_96 {
             get {
                 object obj = ResourceManager.GetObject("icons8-refresh-shield-96", resourceCulture);
@@ -116,6 +96,16 @@ namespace Naja_Update_4._45.Properties {
         internal static System.Drawing.Bitmap new_file {
             get {
                 object obj = ResourceManager.GetObject("new file", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap software {
+            get {
+                object obj = ResourceManager.GetObject("software", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

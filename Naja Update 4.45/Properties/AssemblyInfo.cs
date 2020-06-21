@@ -1,16 +1,17 @@
 ﻿using System.Reflection;
+using System.Resources;
 using System.Runtime.InteropServices;
 
 // As informações gerais sobre um assembly são controladas por
 // conjunto de atributos. Altere estes valores de atributo para modificar as informações
 // associadas a um assembly.
 [assembly: AssemblyTitle("Naja Update 4.45")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Programa ataualizador do Naja para versão 4.45")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Naja Soluções")]
 [assembly: AssemblyProduct("Naja Update 4.45")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyTrademark("Naja Soluções")]
 [assembly: AssemblyCulture("")]
 
 // Definir ComVisible como false torna os tipos neste assembly invisíveis
@@ -33,3 +34,4 @@ using System.Runtime.InteropServices;
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: NeutralResourcesLanguage("pt-BR")]

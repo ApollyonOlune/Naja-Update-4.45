@@ -57,6 +57,7 @@
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripProgressBar1 = new System.Windows.Forms.ToolStripProgressBar();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.naja_server = new System.Windows.Forms.CheckBox();
             this.naja_service = new System.Windows.Forms.CheckBox();
@@ -71,8 +72,7 @@
             this.script_todos = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtCaminho = new System.Windows.Forms.TextBox();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.button2 = new System.Windows.Forms.Button();
             this.botao_debug = new System.Windows.Forms.Button();
             this.botao_atualizar_arquivos = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -385,18 +385,22 @@
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripProgressBar1,
-            this.toolStripStatusLabel1,
-            this.toolStripStatusLabel2});
+            this.toolStripStatusLabel1});
             this.statusStrip1.Location = new System.Drawing.Point(0, 426);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(575, 24);
             this.statusStrip1.TabIndex = 3;
-            this.statusStrip1.Text = "statusStrip1";
+            this.statusStrip1.Text = "statusStrip16898161";
             // 
             // toolStripProgressBar1
             // 
             this.toolStripProgressBar1.Name = "toolStripProgressBar1";
             this.toolStripProgressBar1.Size = new System.Drawing.Size(100, 18);
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(0, 19);
             // 
             // groupBox2
             // 
@@ -567,26 +571,24 @@
             this.txtCaminho.Size = new System.Drawing.Size(181, 20);
             this.txtCaminho.TabIndex = 8;
             // 
-            // toolStripStatusLabel1
+            // button2
             // 
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(0, 19);
-            // 
-            // toolStripStatusLabel2
-            // 
-            this.toolStripStatusLabel2.BorderSides = System.Windows.Forms.ToolStripStatusLabelBorderSides.Left;
-            this.toolStripStatusLabel2.BorderStyle = System.Windows.Forms.Border3DStyle.Bump;
-            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-            this.toolStripStatusLabel2.Size = new System.Drawing.Size(458, 19);
-            this.toolStripStatusLabel2.Spring = true;
-            this.toolStripStatusLabel2.Text = "Versão 1.0";
-            this.toolStripStatusLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button2.Image = global::Naja_Update_4._45.Properties.Resources.software;
+            this.button2.Location = new System.Drawing.Point(417, 114);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(152, 37);
+            this.button2.TabIndex = 12;
+            this.button2.Text = " Procurar Licenças";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // botao_debug
             // 
             this.botao_debug.Image = global::Naja_Update_4._45.Properties.Resources.bug1;
             this.botao_debug.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.botao_debug.Location = new System.Drawing.Point(417, 165);
+            this.botao_debug.Location = new System.Drawing.Point(417, 200);
             this.botao_debug.Name = "botao_debug";
             this.botao_debug.Size = new System.Drawing.Size(152, 37);
             this.botao_debug.TabIndex = 11;
@@ -598,7 +600,7 @@
             // botao_atualizar_arquivos
             // 
             this.botao_atualizar_arquivos.Image = global::Naja_Update_4._45.Properties.Resources.new_file;
-            this.botao_atualizar_arquivos.Location = new System.Drawing.Point(417, 122);
+            this.botao_atualizar_arquivos.Location = new System.Drawing.Point(417, 157);
             this.botao_atualizar_arquivos.Name = "botao_atualizar_arquivos";
             this.botao_atualizar_arquivos.Size = new System.Drawing.Size(152, 37);
             this.botao_atualizar_arquivos.TabIndex = 10;
@@ -635,6 +637,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(575, 450);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.botao_debug);
             this.Controls.Add(this.botao_atualizar_arquivos);
             this.Controls.Add(this.button1);
@@ -713,8 +716,8 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button botao_atualizar_arquivos;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
         private System.Windows.Forms.Button botao_debug;
+        private System.Windows.Forms.Button button2;
     }
 }
 
